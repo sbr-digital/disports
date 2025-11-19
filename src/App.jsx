@@ -106,6 +106,9 @@ const App = () => {
   };
 
   const currentProduct = filteredProducts[currentIndex];
+  
+  // Determina se é a primeira imagem (LCP)
+  const isFirstImage = currentIndex === 0 && filter === 'todos';
 
   if (!currentProduct) return (
     <div className="flex items-center justify-center h-screen bg-neutral-950 text-white">
@@ -122,9 +125,6 @@ const App = () => {
       {/* HEADER */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex justify-between items-center bg-gradient-to-b from-black/90 to-transparent backdrop-blur-sm">
         <div className="flex items-center gap-2 select-none">
-          {/* <div className="w-8 h-8 bg-lime-400 rounded-full flex items-center justify-center shadow-lg shadow-lime-400/20">
-            <span className="font-bold text-black text-lg"></span>
-          </div> */}
           <span className="font-bold text-xl tracking-tighter">diSports</span>
         </div>
         
@@ -164,7 +164,9 @@ const App = () => {
                   alt={currentProduct.title}
                   onError={() => setImageError(true)}
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
-                  loading="eager"
+                  loading={isFirstImage ? "eager" : "lazy"}
+                  fetchPriority={isFirstImage ? "high" : "auto"}
+                  decoding="async"
                 />
               )}
               
