@@ -39,9 +39,9 @@ export default defineConfig({
           'icons-vendor': ['lucide-react']
         },
         // Nomes de arquivo com hash para cache
-        entryFileNames: 'assets/[name].[hash].js',
-        chunkFileNames: 'assets/[name].[hash].js',
-        assetFileNames: 'assets/[name].[hash].[ext]'
+        entryFileNames: 'assets/main.js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
       }
     },
     // Tamanho máximo de chunk

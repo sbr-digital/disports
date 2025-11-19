@@ -34,8 +34,14 @@
     <!-- Preload LCP image with high priority -->
     <link rel="preload" as="image" href="/images/corre4.webp" fetchpriority="high" />
     
-    <!-- Preload critical JavaScript -->
-    <link rel="modulepreload" href="/src/main.jsx" />
+    <!-- Preload critical CSS -->
+    <link rel="preload" as="style" href="/assets/index.css" />
+    <link rel="stylesheet" href="/assets/index.css" />
+    
+    <!-- Preload critical JavaScript chunks -->
+    <link rel="modulepreload" href="/assets/react-vendor.js" />
+    <link rel="modulepreload" href="/assets/icons-vendor.js" />
+    <link rel="modulepreload" href="/assets/main.js" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -80,6 +86,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/assets/main.js"></script>
   </body>
 </html>
