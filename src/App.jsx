@@ -18,7 +18,7 @@ const PRODUCTS_DATA = [
     price: "R$ 599,90",
     description: "Super lançamento. Amortecimento e leveza para sua corrida.",
     // Caminho relativo à pasta public
-    image: "/images/corre4.png", 
+    image: "/images/corre4.webp", 
     color: "bg-orange-500",
     whatsappMessage: "Olá! Gostaria de saber mais sobre o Corre 4 Edição Especial."
   },
@@ -28,7 +28,7 @@ const PRODUCTS_DATA = [
     category: "roupas",
     price: "R$ 249,90",
     description: "Tecnologia que se adapta ao corpo. Conforto total.",
-    image: "/images/conjunto.png",
+    image: "/images/conjunto.webp",
     color: "bg-neutral-800",
     whatsappMessage: "Olá! Tenho interesse no Conjunto Icon Adaptive."
   },
@@ -38,7 +38,7 @@ const PRODUCTS_DATA = [
     category: "tenis",
     price: "R$ 499,90",
     description: "Ultraconfortável com sistema Slip-ins. Calce fácil.",
-    image: "/images/skechers.png",
+    image: "/images/skechers.webp",
     color: "bg-slate-400",
     whatsappMessage: "Olá! Quero experimentar o Skechers Glide-Step."
   },
@@ -48,7 +48,7 @@ const PRODUCTS_DATA = [
     category: "tenis",
     price: "R$ 699,90",
     description: "Estabilidade e força para seus treinos mais pesados.",
-    image: "/images/tribase.png",
+    image: "/images/tribase.webp",
     color: "bg-purple-600",
     whatsappMessage: "Olá! Gostaria de detalhes do UA Tribase."
   }
