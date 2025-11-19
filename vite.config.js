@@ -67,12 +67,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom', 'lucide-react'],
     exclude: ['@vercel/analytics', '@vercel/speed-insights']
-  },
-  // Resolver configurações
-  resolve: {
-    alias: {
-      // Reduz tamanho usando versões ESM
-      'react': 'react/jsx-runtime'
-    }
   }
 })
